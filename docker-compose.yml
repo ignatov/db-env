@@ -1,0 +1,12 @@
+pg93:
+  ports:
+    - "54323:5432"
+  image: postgres:9.3
+  env_file: .env
+
+pg94:
+  ports:
+    - "54324:5432"
+  image: postgres:9.4
+  env_file: .env
+
