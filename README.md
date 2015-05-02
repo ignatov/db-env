@@ -29,3 +29,8 @@ e.g.
 ```
 docker-compose stop pg94
 ```
+
+## Useful links
+1. https://docs.docker.com/compose/
+2. https://github.com/docker/compose
+3. https://github.com/sdurrheimer/docker-compose-zsh-completion
