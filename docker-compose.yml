@@ -61,3 +61,10 @@ oracle11:
     - "1521:1521"
   image: kazunobufujii/oracle-xe-11g
   env_file: .env
+
+db2:
+  privileged: true
+  image: ignatov/db2
+  ports:
+    - "50000:50000"
+  env_file: .env
