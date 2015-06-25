@@ -10,6 +10,11 @@ or just
 e.g.
 `docker-compose stop pg94 && docker-compose rm --force pg94`
 
+## Update images
+`docker-compose pull <service>`
+e.g.
+`docker-compose pull mysql51 mysql55 mysql56`
+
 ## Statefull services
 For saving a state of a service you can use the stop command:
 `docker-compose stop <service>`
