@@ -21,3 +21,4 @@ e.g.
 1. https://github.com/docker/compose
 1. https://github.com/sdurrheimer/docker-compose-zsh-completion
 1. http://stackoverflow.com/questions/24390329/cant-pull-docker-image-no-route-to-host
+1. https://github.com/chadoe/docker-cleanup-volumes – remove unused images
