@@ -62,11 +62,10 @@ mysql51:
 # oracle VM options
 # -Duser.country=en -Duser.language=en
 # todo: use debian:wheezy
-# todo: reduce size as https://github.com/MaksymBilenko/docker-oracle-xe-11g does
 oracle11:
   ports:
     - "1521:1521"
-  image: kazunobufujii/oracle-xe-11g
+  image: deadok22/docker-oracle-xe-11g
   env_file: .env
 
 db2:
