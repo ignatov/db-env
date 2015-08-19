@@ -1,6 +1,6 @@
 pg82:
   ports:
-    - "54322:5432"
+    - "54312:5432"
   image: ignatov/docker-postgresql-8.2
   env_file: .env
 
