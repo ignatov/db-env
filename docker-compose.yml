@@ -65,6 +65,12 @@ mysql51:
   image: ignatov/docker-mysql-5.1
   env_file: .env
 
+maria10:
+  ports:
+    - "33040:3306"
+  image: mariadb:10.0
+  env_file: .env
+
 # oracle VM options
 # -Duser.country=en -Duser.language=en
 # todo: use debian:wheezy
