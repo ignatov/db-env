@@ -30,9 +30,22 @@ e.g.
 
 # Additional recipes
 
-## PosgtgreSQL 9.3 with SSH
+## PostgreSQL 9.3 with SSH with key auth
 ```
 read MY_SSH_KEY < ~/.ssh/id_rsa.pub
 docker run -ti -d -p 22223:22 -p 54032:5432 --name pg93ssh -e "PG_USERNAME=guest" -e "PG_PASSWORD=guest" -e "SSH_PUBLIC_KEY=$MY_SSH_KEY" nimiq/postgresql93
 ```
 
+## MySQL and PostgreSQL via SSH with password auth
+```
+git clone https://github.com/scotch-io/scotch-box.git
+cd scotch-box
+vagrant up
+```
+
+```
+192.168.33.10:22 vagrant/vagrant – proxy server
+localhost:3306/scotchbox root/root – MySQL
+localhost:5432/scotchbox root/root – PostgreSQL
+
+```
