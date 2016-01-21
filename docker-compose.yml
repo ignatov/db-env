@@ -40,6 +40,12 @@ pg94:
   image: postgres:9.4
   env_file: .env
 
+pg95:
+  ports:
+    - "54325:5432"
+  image: postgres:9.5
+  env_file: .env
+
 mysql55:
   privileged: true
   ports:
