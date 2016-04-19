@@ -40,6 +40,12 @@ pg94:
   image: postgres:9.4
   env_file: .env
 
+pg94_log:
+  ports:
+    - "54444:5432"
+  build: pg94
+  env_file: .env
+
 pg95:
   ports:
     - "54325:5432"
@@ -83,7 +89,7 @@ maria10:
 oracle11:
   ports:
     - "1521:1521"
-  image: deadok22/docker-oracle-xe-11g
+  image: ignatov/docker-oracle-xe-11g
   env_file: .env
 
 db2:
