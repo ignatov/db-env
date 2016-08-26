@@ -1,0 +1,1 @@
+http://infocenter.sybase.com/help/index.jsp?topic=/com.sybase.infocenter.dc01083.1550/doc/html/rsa1236207429367.html
