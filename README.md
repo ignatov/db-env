@@ -3,6 +3,13 @@ https://docs.docker.com/engine/installation/
 
 https://docs.docker.com/compose/install/ – Docker Compose
 
+## Install Docker for Windows
+For Windows under version 10 use Docker Toolbox https://docs.docker.com/toolbox/overview/
+* Install the latest Oracle Virtual box https://www.virtualbox.org/ using default location
+* Install all Docker Toolbox components without changing default locations
+* Clone this repo
+* See below instructions for docker-compose to start/stop containers
+
 ## Start
 Execute `docker-compose up -d --no-recreate <service>` for setting up some particular services
 e.g.
@@ -32,6 +39,7 @@ e.g.
 1. https://github.com/sdurrheimer/docker-compose-zsh-completion
 1. http://stackoverflow.com/a/32023104/1553664
 1. https://github.com/chadoe/docker-cleanup-volumes – remove unused images
+1. https://github.com/brogersyh/Dockerfiles-for-windows
 
 # Additional recipes
 
@@ -54,3 +62,6 @@ localhost:3306/scotchbox root/root – MySQL
 localhost:5432/scotchbox root/root – PostgreSQL
 
 ```
+
+## Dumps
+Sample databases dumps mostly based on Sakila db sample
