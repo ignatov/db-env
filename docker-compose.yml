@@ -92,3 +92,20 @@ db2:
   ports:
     - "50000:50000"
   env_file: .env
+
+sybase:
+  image: chernov/sybase_15_7:latest
+  ports:
+    - "5000:5000"
+  env_file: .env
+  hostname: dksybase
+
+#derby:
+#  image: chernov/derby-server:latest
+#  ports:
+#    - "1527:1527"
+#  env_file: .env
+  
+
+        
+  
