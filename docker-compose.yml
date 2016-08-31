@@ -92,3 +92,35 @@ db2:
   ports:
     - "50000:50000"
   env_file: .env
+
+sybase:
+  image: chernov/sybase_15_7
+  ports:
+    - "5000:5000"
+  env_file: .env
+  hostname: dksybase
+
+derby:
+  image: chernov/apache-derby-10-12
+  ports:
+    - "1527:1527"
+  env_file: .env
+  
+# H2 Version 1.3.176 (2014-04-05), Last Stable
+# H2 Version 1.4.192 (beta) has some issues with client/server connection
+h2:
+  image: chernov/docker-h2
+  ports:
+    - "9092:9092"
+  env_file: .env
+
+
+hsql23:
+  image: chernov/hsqldb
+  ports: 
+    - "9001:9001"
+  env_file: .env
+
+
+
+
