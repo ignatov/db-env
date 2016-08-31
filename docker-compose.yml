@@ -114,3 +114,13 @@ h2:
     - "9092:9092"
   env_file: .env
 
+
+hsql23:
+  image: chernov/hsqldb
+  ports: 
+    - "9001:9001"
+  env_file: .env
+
+
+
+
