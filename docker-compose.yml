@@ -106,6 +106,11 @@ derby:
     - "1527:1527"
   env_file: .env
   
+# H2 Version 1.3.176 (2014-04-05), Last Stable
+# H2 Version 1.4.192 (beta) has some issues with client/server connection
+h2:
+  image: chernov/docker-h2
+  ports:
+    - "9092:9092"
+  env_file: .env
 
-        
-  
