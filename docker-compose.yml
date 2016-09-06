@@ -92,3 +92,9 @@ db2:
   ports:
     - "50000:50000"
   env_file: .env
+
+h2:
+  image: chernov/h2:1.3
+  ports:
+    - "9092:9092"
+  env_file: .env
