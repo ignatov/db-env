@@ -92,3 +92,15 @@ db2:
   ports:
     - "50000:50000"
   env_file: .env
+
+derby1011:
+  image: chernov/derby-server:10.11
+  ports:
+    - "1527:1527"
+  env_file: .env
+
+derby1012:
+  image: chernov/derby-server:10.12
+  ports:
+    - "1528:1527"
+  env_file: .env
