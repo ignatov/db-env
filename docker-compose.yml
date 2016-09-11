@@ -93,6 +93,18 @@ db2:
     - "50000:50000"
   env_file: .env
 
+hsqldb200:
+  image: chernov/hsqldb:2.0.0
+  ports:
+    - "9001:9001"
+  env_file: .env
+
+hsqldb233:
+    image: chernov/hsqldb:2.3.3
+    ports:
+    - "9002:9001"
+    env_file: .env
+
 derby1011:
   image: chernov/derby-server:10.11
   ports:
