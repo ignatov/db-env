@@ -104,3 +104,9 @@ derby1012:
   ports:
     - "1528:1527"
   env_file: .env
+
+h2:
+  image: chernov/h2:1.3
+  ports:
+    - "9092:9092"
+  env_file: .env
