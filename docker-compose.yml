@@ -122,3 +122,12 @@ h2:
   ports:
     - "9092:9092"
   env_file: .env
+
+# needs about 30 seconds for proper start and initialization
+sybase157:
+  image: chernov/sybase:latest
+  ports:
+    - "5000:5000"
+  env_file: .env
+  hostname: dksybase
+
